@@ -76,7 +76,7 @@ type Raft struct {
 	commitIndex int
 	lastApplied int
 
-	//TODO
+	// (fixed)
 	// nextIndex与matchIndex初始化长度应该为len(peers)，Leader对于每个Follower都记录他的nextIndex和matchIndex
 	// nextIndex指的是下一个的appendEntries要从哪里开始
 	// matchIndex指的是已知的某follower的log与leader的log最大匹配到第几个Index,已经apply
